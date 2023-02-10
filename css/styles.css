@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  background-color: #0e1fbd;
+}
+.kinetic {
+  width: 250px;
+  height: 50px;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  
+}
+.fill {
+  width: 0px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(84, 187, 27, 1) 0%,
+    rgba(187, 129, 27, 1) 26%,
+    rgba(235, 77, 72, 1) 57%,
+    rgba(233, 12, 12, 1) 89%
+  );
+  animation: fillStroke 5s linear forwards;
+}
+h4{
+    font-size: 28px;
+    color: #fff;
+    font-family: sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+h4 span{
+    font-size: 38px;
+    color: yellow;
+    font-weight: 800;
+}
+@keyframes fillStroke {
+  0% {
+    width: 0%;
+  }
+  25% {
+    width: 30%;
+  }
+  50% {
+    width: 60%;
+  }
+  75%{
+    width: 90%;
+  }
+  100%{
+    width: 99%;
+  }
+}
